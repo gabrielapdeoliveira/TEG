@@ -1,9 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-typedef struct Vizinho {
-    int id;
-    struct Vizinho* prox;
+// representa uma aresta na lista de adjacências
+typedef struct Vizinho { 
+    int id; // ID do vértice de destino
+    struct Vizinho* prox; // ponteiro para o próximo vizinho
 } Vizinho;
 
 typedef struct Vertice {
